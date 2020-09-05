@@ -7,12 +7,7 @@ layout: default
 {% assign posts_count = paginator.posts | size %}
 {% if posts_count > 0 %}
 
-<h1>Description: </h1> {% if page.description != null %} <div class="post-description">{{ page.description }}</div>
-{% endif %}
-Generally in this blog I will be talking about my journeys in tech field, specially
-in cyber security.
 {{ content }}
-
 
 <h2>recent articles</h2>
 <div class="post-links">
@@ -49,6 +44,3 @@ in cyber security.
 {% else %}
 <h3>no posts yet.</h3>
 {% endif %}
-
-
-<br></br> <p>Through documentation, information lives for ever. </p>
